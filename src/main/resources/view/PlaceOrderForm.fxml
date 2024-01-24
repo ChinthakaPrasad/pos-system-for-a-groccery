@@ -9,7 +9,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="784.0" prefWidth="1027.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlaceOrderFormController">
    <children>
@@ -45,5 +45,16 @@
       </TableView>
       <Button fx:id="btnAddToCart" layoutX="798.0" layoutY="270.0" mnemonicParsing="false" onAction="#addToCartBtnSetOnAction" prefHeight="42.0" prefWidth="150.0" style="-fx-background-color: #daf542;" text="Add to Cart" />
       <Button fx:id="btnPlaceOrder" layoutX="798.0" layoutY="731.0" mnemonicParsing="false" onAction="#placeOrderBtnOnaction" prefHeight="42.0" prefWidth="150.0" style="-fx-background-color: #42b6f5;" text="Place Order" />
+      <Label layoutX="72.0" layoutY="742.0" prefHeight="21.0" prefWidth="97.0" text="Total  : ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotal" layoutX="155.0" layoutY="742.0" prefHeight="21.0" prefWidth="97.0" text="0.00">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOrderID" layoutX="781.0" layoutY="33.0" prefHeight="30.0" prefWidth="133.0" />
    </children>
 </AnchorPane>
